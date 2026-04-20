@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ car.model }}</title>
+</head>
+<body>
+
+<h1>{{ car.model }}</h1>
+
+<p>Yili: {{ car.year}}</p>
+<p>Tezlik turi: {{ car.transmisson}}</p>
+<p>Yoqilg'i turi: {{ car.fuel_type}}</p>
+<p>Narxi: {{ car.price}} </p>
+
+<p>Brendi: {{ car.brand }}</p>
+
+<a href="{% url 'home' %}">⬅️ Ortga </a>
+
+
+</body>
+</html>
