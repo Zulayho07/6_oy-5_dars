@@ -14,6 +14,7 @@ class Car(models.Model):
     transmission=models.CharField(max_length=50)
     fuel_type=models.CharField(max_length=50)
     price=models.DecimalField(max_digits=12, decimal_places=2)
+    image=models.ImageField(upload_to='images/', null=True, blank=True)
 
     brand=models.ForeignKey(Brand, on_delete=models.CASCADE)
 
