@@ -1,0 +1,10 @@
+<nav class="navbar navbar-light bg-light">
+        <div class="container" style="background-color: #34c3eb">
+            <a class="navbar-brand {% if request.resolver_match.url_name == 'home' %}text-primary fw-bold{% endif %}"
+               href="{% url 'home' %}">Home</a>
+            <form class="d-flex">
+                <input class="form-control me-5" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
